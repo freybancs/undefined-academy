@@ -3,28 +3,76 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <link rel="stylesheet" href="main.css" />-->
+    <link rel="stylesheet" href="main.css">
     <title>Mi primera página web</title>
 </head>
 
 <body>
-    <img src="fotocv.png" width="250" height="250" alt="perfil" />
-    <h1>Freyban Contreras</h1>
-    <h3><em><a href="https://github.com/freybancs">Analista QA</a></em></h3>
+    <div class="page"> <!--Los div se usa exclusivamente para maquetar el contenido, no tiene ningun resultado semantico, son "invisibles". Con los Div le damos el estilo con los selectores de CSS-->
+        <header>
+            <img src="fotocv.png" width="150" height="150" alt="foto de perfil">
+            <nav> <!--nav es un menu de navegación-->
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
     <hr>
-    <p>Actualmente me encuentro estudiando en el bootcamp de <strong>UndefineShell</strong>.</p>
-    <p>-💻 Graduado en tecnicatura en Informática, mis primeras experiencias fueron como Soporte Técnico para empresas,
-        luego salté al testing y es a lo que me dedico actualmente, siendo mi fuerte las pruebas funcionales de caja
-        negra.</p>
-    <p>-💡 Actualmente trabajo para un proyecto de un aplicativo de escritorio de diseño de interiores.</p>
-    <p>-🔎 Me interesan las empresas que promuevan el crecimiento laboral y apuesten por la promoción interna de los
-        talentos y aptitudes de sus empleados.</p>
-    <p>-📚 En cuanto a conocimientos y herramientas, Trello, SQL Server, HP ALM, y actualmente aprendiendo Postman y
-        JavaScript.</p>
+    <section>
+        <h1>Freyban Contreras</h1>
+        <h2>
+            <em><a href="https://github.com/freybancs">Analista QA</a></em>
+        </h2>
+        <h1>
+            Actualmente me encuentro estudiando en el bootcamp de
+            <strong>UndefineShell</strong>.
+        </h1>
+        <p>
+            -💻 Graduado en tecnicatura en Informática, mis primeras experiencias
+            fueron como Soporte Técnico para empresas, luego salté al testing y es a
+            lo que me dedico actualmente, siendo mi fuerte las pruebas funcionales de
+            caja negra.
+        </p>
+        <p>
+            -💡 Actualmente trabajo para un proyecto de un aplicativo de escritorio de
+            diseño de interiores.
+        </p>
+        <p>
+            -🔎 Me interesan las empresas que promuevan el crecimiento laboral y
+            apuesten por la promoción interna de los talentos y aptitudes de sus
+            empleados.
+        </p>
+        <p>
+            -📚 En cuanto a conocimientos y herramientas, Trello, SQL Server, HP ALM,
+            y actualmente aprendiendo Postman y JavaScript.
+        </p>
+        <a href="about.html">About Freyban Contreras</a>
+    </section>
+    <hr>
+    <section>
+        <article>
+            <header>
+                <h1>HTML Semántico</h1>
+                <p>Por Guillermo Rodas. Publicado <time datetime="2023-03-13 15:00-08:00"> Marzo 13th</time></p>
+            </header>
+            <p>Esta es una página web de ejemplo que explica el marcado semántico de HTML5</p>
+            <!-- 
+        <article>: en un contenido que tiene relación con otros contenidos a su alrededor.
+        -->
+            <footer>
+                <p> Este articulo falso fue escrito por alguien.</p>
+                <address>
+                    Por favor contacte a <a href="mailto:freybnacs@gmail.com">Freyban Contreras</a> para preguntas sobre el artículo.
+                </address>
+            </footer>
+        </article>
+    </section>
 
-    <hr>
-    <a href="about.html">About Freyban Contreras</a>
-    <a href="/achievements/skills.html">Skills</a>
+    <footer>
+        <p>&copy; 2023</p>
+    </footer>
 </body>
 
 </html>

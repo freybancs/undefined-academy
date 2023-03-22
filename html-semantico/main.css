@@ -1,72 +1,17 @@
-/*body{
-    background: transparent;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background: white;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-section{
-    background: mediumpurple;
+main {
+  width: 600px;
 }
 
-div {
-    background: palegoldenrod;
-    padding: 16px 32px;
-    margin: 20px;
-    border: 8px solid orchid;
-    width: 100px;
-
-} 
-
-p {
-    background: papayawhip;
-    color: lightgray;
+div.page {
+  padding: 20px;
+  border: 1px solid rgb(6, 49, 136);
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 800px;
 }
-
-strong{
-    display: block;
-    margin: 50px;
-}
-
-.abuelo {
-    border: 1px dotted black;
-}
-
-p + p {
-    color: tomato;
-}
-
-.hermano > span{
-    color: purple;
-}
-
-div span{
-    font-weight: bold;
-}
-
-div ~ div {
-    color: teal;
-}*/
-
-body{
-    background: white;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main{
-    width: 600px;
-}
-
-div{
-    padding: 20px;
-    border: 1px solid tomato;
-}
-
-.column {
-    display: inline-block;
-    width: calc(33.33% - 40px - 2px)
-}
-
-
-
- 

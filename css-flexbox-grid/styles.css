@@ -14,16 +14,21 @@ body {
 }
 
 .container {
+    /*99% de las caracteristicas que se usan en tu día a día*/
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly ;
-
+    justify-content: center;
+    /*cssreference.io / jeremy thomas*/
+    align-items: center;
+    align-content: space-around;
+    /*se usa para multilinea*/
     border: 2px dashed rebeccapurple;
     height: 100%;
 }
 
-.item {
+.item,
+.grid-item {
     border: 2px solid coral;
     height: 50px;
     width: 200px;
@@ -32,4 +37,40 @@ body {
     font-weight: bold;
     text-align: center;
     color: coral;
+}
+
+.grid-item {
+    width: auto;
+    height: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header"
+    " main main main sidebar"
+    " footer footer footer footer";
+    height: 100%;
+    border: 2px dashed teal;
+}
+
+.item-a{
+    grid-area: 1 / 1 / 2 / 5;
+   
+}
+
+.item-b{
+    grid-area: 2 / 1 / 2 / 3;
+   
+}
+
+.item-c{
+    grid-area:2 / 4 / 2 / 5;
+   
+}
+
+.item-d{
+    grid-area: 4 / 1 / 3 / 5  ;
+   
 }

@@ -4,7 +4,7 @@
 
 div {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   border: 1px solid white;
   border-radius: 8px;
   padding: 10px;
@@ -33,7 +33,7 @@ input[type="search"] {
 
 nav {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -69,16 +69,13 @@ header {
   align-items: center;
 }
 
-section{
+section {
   text-align: center;
   font-size: 30px;
   margin: 0 0 1em;
-  clear:left;
+  clear: left;
 }
 
-section>p{
+section>p {
   font-size: 20px;
 }
-
-
-
